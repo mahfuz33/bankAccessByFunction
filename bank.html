@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Data Access using Function</title>
+</head>
+
+<body>
+    <header class="text-5xl text-center m-5">
+        Welcome to My <span class="text-amber-800">Bank Account</span>.
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-yellow-700 p-8 rounded-lg text-center">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-orange-700 p-8 rounded-lg text-center">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="withdrow-value">00</span></h2>
+                </div>
+                <div class="bg-blue-700 p-8 rounded-lg text-center">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-5xl">$<span id="balance-total">1200</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-lime-900 p-8 rounded-lg ">
+                    <h3 class="text-3xl  text-white">Please Deposit</h3>
+
+                    <input class="w-9/12 block p-1 ps-3 mt-8" type="email" name="" id="deposit-field"
+                        placeholder="$ Add do you want to deposit">
+
+                    <button id="deposit-btn" class="bg-red-700 hover:bg-violet-800 font-semibold px-3 py-2 rounded-lg  mt-6 text-white">
+                        Deposit
+                    </button>
+                </div>
+                <div class="bg-emerald-600 p-8 rounded-lg">
+                    <h3 class="text-3xl  text-white">Please Withdraw</h3>
+
+                    <input class="w-9/12 block p-1 ps-3 mt-8" type="email" name="" id="withdraw-field"
+                        placeholder="$ Add do you want to deposit">
+
+                    <button id="withdraw-btn" class="bg-orange-900 hover:bg-violet-800 font-semibold px-3 py-2 rounded-lg mt-6  text-white">
+                        Withdraw
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <script src="JS/deposit.js"></script>
+        <script src="JS/withdraw.js"></script>
+    </main>
+</body>
+
+</html>
